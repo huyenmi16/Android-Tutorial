@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                style="@style/ImageViewCircular"
+                android:src="@drawable/img_2"
+                android:contentDescription="Image"
+                android:tag="Dessert image 1 clicked!"/>
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Cơm tấm là một món ăn truyền thống rất đặc trưng của Việt Nam, đặc biệt là ở miền Nam. Đây là một món cơm được làm từ gạo tấm, tức là gạo bị vỡ trong quá trình xay xát, không còn nguyên hạt như gạo thường."
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                style="@style/ImageViewCircular"
+                android:contentDescription="Image"
+                android:src="@drawable/img_3" />
+
+            <TextView
+                android:id="@+id/textViewTitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Phở cuốn là một món ăn đặc trưng của ẩm thực Việt Nam, xuất phát từ Hà Nội. Đây là một biến thể sáng tạo của phở truyền thống, thay vì ăn phở với nước dùng, các nguyên liệu được cuốn trong bánh phở tươi. Món ăn này rất phổ biến vì sự tươi ngon, dễ ăn và tiện lợi."
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cart"
+        style="@style/ImageViewCircular"
+        android:layout_marginTop="40dp"/>
+
+
+</LinearLayout>

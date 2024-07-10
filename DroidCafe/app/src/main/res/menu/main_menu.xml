@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_food"
+        android:title="Food">
+        <menu>
+            <item
+                android:id="@+id/food_burger"
+                android:title="Burger"
+                android:orderInCategory="100"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/food_pizza"
+                android:title="Pizza"
+                android:orderInCategory="200"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/food_salad"
+                android:title="Salad"
+                android:orderInCategory="300"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/food_pasta"
+                android:title="Pasta"
+                android:orderInCategory="400"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_drink"
+        android:title="Drinks">
+        <menu>
+            <item
+                android:id="@+id/drink_water"
+                android:title="Water"
+                android:orderInCategory="100"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/drink_coffee"
+                android:title="Coffee"
+                android:orderInCategory="200"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/drink_tea"
+                android:title="Tea"
+                android:orderInCategory="300"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>
